@@ -1,0 +1,78 @@
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Node files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Firebase
+.firebase
+firebase-debug.log
+database-debug.log
+firestore-debug.log
+
+# Genkit (if any local state is generated, though typically flows are stateless)
+# Add any Genkit specific local files if they arise, e.g., .genkit/state/
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Cache files
+.cache
+*.cache
+
+# Log files
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temp files
+*.tmp
+*~
+temp-files/
+
+# Optional local configuration files
+local.config.js
+local.config.json

@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 94%; /* #F0F0F0 Very Light Gray */
+    --foreground: 240 10% 3.9%; /* Default Dark */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 248 53% 58%; /* #6A5ACD Slate Blue */
+    --primary-foreground: 0 0% 98%; /* White */
+    --secondary: 240 67% 94%; /* #E6E6FA Lavender (using as secondary for subtle backgrounds) */
+    --secondary-foreground: 248 53% 58%; /* Slate Blue (text on lavender) */
+    --muted: 0 0% 96.1%; 
+    --muted-foreground: 0 0% 45.1%; 
+    --accent: 240 67% 90%; /* Slightly darker Lavender for active elements */
+    --accent-foreground: 248 53% 58%; /* Slate Blue */
+    --destructive: 0 84.2% 60.2%; /* Default red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%; 
+    --input: 0 0% 89.8%; 
+    --ring: 248 53% 58%; /* Slate Blue for focus rings */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 222 47% 11%; /* Dark Slate Blue-ish gray */
+    --foreground: 0 0% 98%; /* Light Gray */
+    --card: 222 47% 15%; 
+    --card-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 248 53% 68%; /* Lighter Slate Blue */
+    --primary-foreground: 222 47% 11%; /* Dark text on light primary */
+    --secondary: 240 30% 25%; /* Darker Lavender */
+    --secondary-foreground: 0 0% 98%; 
+    --muted: 222 47% 18%; 
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 240 30% 35%; /* Dark Lavender for active elements */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 248 53% 68%; /* Lighter Slate Blue for focus rings */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
